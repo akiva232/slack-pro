@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { OpenComponent } from './pro/open/open.component';
-import { ChatComponent } from './pro/chat/chat.component';
+import { MainComponent } from './chat/main/main.component';
+
+
 
 
 const routes: Routes = [
   {path:'',component:OpenComponent},
-  {path:'chat',component:ChatComponent},
-  // {path:'',component:ChatComponent},
+  {path:'main',component:MainComponent},
+  
 
 
 ];

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-open',
@@ -10,7 +11,7 @@ export class OpenComponent implements OnInit {
 
 
   signInForm:FormGroup;
-  constructor() { }
+  constructor(public a:Router) { }
 
   ngOnInit(): void {
 
@@ -22,5 +23,8 @@ export class OpenComponent implements OnInit {
   onSubmit(){
     console.log(this.signInForm.controls);
   }
+    //  sigin(){this.a.navigate(["/chat"])
+
+    //  }
 
 }
